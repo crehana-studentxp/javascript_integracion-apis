@@ -1,0 +1,29 @@
+{
+  "dragon-ball": [
+    {
+      "id": 1,
+      "nombre": "goku",
+      "poder": "genkidama"
+    },
+    {
+      "nombre": "freeza",
+      "poder": "Death Ball",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "nombre": "Piccolo",
+      "poder": "Masenko"
+    },
+    {
+      "nombre": "gohan",
+      "poder": "kameh hame ha",
+      "id": 4
+    },
+    {
+      "nombre": "yayirobe",
+      "poder": "comer",
+      "id": 7
+    }
+  ]
+}
