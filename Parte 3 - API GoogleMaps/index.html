@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api google maps</title>
+    <style>
+        #map {
+          height: 100%;
+        }
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+</head>
+<body>
+  <input type="text" id="place_input" placeholder="Ingresar ubicación">
+    <div id="map"></div>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4YJr6r0_TzVu-bAGV1iQxT3HQda1jCdI&libraries=places&callback=initMap">
+    </script>
+<script>
+    const divMap = document.getElementById("map");
+        const input = document.getElementById("place_input");
+        const coord = { lat: -4.0, lng: 36.0 };
+        let map;
+        let marker;
+        let autocomplete;
+        function initMap() {
+            map = new google.maps.Map(divMap, {
+                center: coord,
+                zoom: 4,
+            });
+            marker = new google.maps.Marker({
+                position: coord,
+                map: map,
+            });
+            initAutoComplete();
+        }
+        function initAutoComplete(){
+            autocomplete= new google.maps.places.Autocomplete(input);
+            autocomplete.addListener('place_changed', function(){
+                const place= autocomplete.getPlace();
+                map.setCenter(place.geometry.location);
+                marker.setPosition(place.geometry.location);
+            })
+
+        }
+</script>
+</body>
+</html>
