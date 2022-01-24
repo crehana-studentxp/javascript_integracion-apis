@@ -2,7 +2,7 @@
   <a href="https://www.crehana.com">
     <img src="images/logo.png" alt="Logo" width="50" height="50">
   </a>
-  <a href="https://www.crehana.com">
+  <a href=" https://www.crehana.com/clases/v2/12674/contenido/">
     <img src="images/curso.png" alt="Logo" width="160" height="50">
   </a>
   <a href="https://www.linkedin.com/in/mayra-puntillo-rodriguez/">
@@ -24,6 +24,10 @@
 ### Tecnologías usadas
 
 El curso, sus ejemplos y proyectos propuestos están desarrollados en Javascript.
+<br/>Te recomendamos descargar Visual Studio Code como editor de código
+<ul>
+  <li><a href="https://code.visualstudio.com/"> VS Code</li>
+</ul>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
